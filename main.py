@@ -1,3 +1,7 @@
+'''
+    A python3 program that can clear json file values. Reset all nested values to defined data type.
+'''
+
 import json 
 
 json_file = ''
