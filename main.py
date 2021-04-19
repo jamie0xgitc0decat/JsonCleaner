@@ -21,7 +21,7 @@ def nested_check(field):
         return None
     
 with open(json_file) as file:
-    json_data = {key : nested_loop(val) for key,val in json.load(file).items()}
+    json_data = {key : nested_check(val) for key,val in json.load(file).items()}
 
 with open(json_file, 'w') as outfile:
      json.dump(json_data, outfile, sort_keys = True, indent = 4,
